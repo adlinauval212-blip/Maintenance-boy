@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WereWolfGPT - Pro Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-top">
+                <button class="menu-btn" id="sidebar-close" title="Tutup Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="new-chat-btn" id="new-chat-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    <span class="nav-text">Chat Baru</span>
+                </button>
+            </div>
+            
+            <div class="sidebar-history">
+                <p class="history-title nav-text">Terbaru</p>
+                <div id="chat-list"></div>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="nav-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span class="nav-text">Dev: <strong>Adli</strong></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span class="nav-text">Model: 2.5-Pro</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-btn" id="sidebar-open" title="Buka Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="logo-container">
+                        <span class="logo-text">WereWolfGPT</span>
+                        <span class="model-badge">2.5-pro</span>
+                    </div>
+                </div>
+                <div class="user-avatar">A</div>
+            </header>
+
+            <div class="chat-container" id="chat-display">
+                <!-- Welcome Screen -->
+                <div id="welcome-screen" class="welcome-screen">
+                    <div class="wolf-icon">🐺</div>
+                    <h1>Halo, Saya WereWolfGPT</h1>
+                    <p>Didukung oleh Gemini 2.5-Pro. Apa yang bisa Adli bantu hari ini?</p>
+                </div>
+            </div>
+
+            <footer class="input-section">
+                <div class="input-wrapper">
+                    <textarea id="user-input" placeholder="Tuliskan perintah untuk WormGPT..." rows="1"></textarea>
+                    <div class="input-buttons">
+                        <button id="send-btn" title="Kirim Pesan">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <p class="footer-note">WereWolfGPT Pro v2.5. Dikembangkan secara khusus oleh Aldi.</p>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
